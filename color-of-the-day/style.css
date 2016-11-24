@@ -1,0 +1,48 @@
+#text {
+	padding-top: 40vh;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+#text.activ{
+	padding-top: 10vh;
+}
+#color{
+	color:#333;
+}
+#color.alb{
+	color:#fff;
+}
+#text h1{
+	font-size: 8rem;
+}
+#under span{
+	background-color: #333;
+	padding: 10px;
+	color:#fff;
+	font-size: 12px;
+}
+.field-color{
+	display: none;
+}
+#principal{
+	height: 100vh;
+}
+#box-down{
+		cursor:pointer;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+#box-down.activ{
+		margin-top: 30px;
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Safari */
+		transform: rotate(180deg); /* Standard syntax */
+}
+@keyframes example {
+    0% {	padding-top: 10px;}
+    50% {	padding-top: 30px;}
+    80% {	padding-top: 30px;}
+    100% {	padding-top: 10px;}
+}
