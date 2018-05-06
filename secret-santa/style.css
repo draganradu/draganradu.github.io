@@ -1,0 +1,28 @@
+#head-nav{
+    text-decoration: none;
+    color: inherit;
+    padding-top: 10px;
+    word-spacing: 0px;
+}
+#head-nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+#head-nav sup {
+	letter-spacing: 2px;
+}
+.inner {
+    height: 50vh;
+}
+/* -------------- fix ----------------- */
+.inner h2{
+	margin-bottom: 10px;
+}
+.inner h2,.inner p,.numar{
+	opacity: 1;
+	padding-top: 0px;
+	word-spacing: 0px;
+}
+.inner:hover {
+    border: 1px solid #000;
+}
