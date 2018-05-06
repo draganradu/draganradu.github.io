@@ -1,0 +1,254 @@
+.box {
+  min-height: 10vh;
+  background-color: red;
+}
+
+.social-media,
+.project-element {
+  margin-bottom: 10px;
+}
+
+ /*-----------------------------------------------------*/
+ /*------------------------- 0 ------------------------*/
+ /*----------------------- body -----------------------*/
+  /*---------------------------------------------------*/
+
+:root {
+  --color-0: #ffffff;
+  --color-1: #eae8e7;
+  --color-2: #A8A789;
+  --color-3: #5da4d9;
+  --color-4: #000000;
+
+  --opacity: 0.3;
+
+  --transition-normal: 0.5s;
+  --transition-long: 1s;
+
+
+  --space-1: 12px;
+  --space-2: 24px;
+  --space-3: 36px;
+  --space-4: 48px;
+  --space-5: 96px;
+}
+
+body {
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-3);
+  min-height: 100vh;
+  background-color: var(--color-1);
+}
+
+/*-----------------------------------------------------*/
+/*------------------------- 1 ------------------------*/
+/*----------------------- general -----------------------*/
+/*---------------------------------------------------*/
+
+.blue {
+  background-color: var(--color-3);
+}
+
+.blue p, .blue h1, .blue h2, .blue a {
+  color: var(--color-0);
+  text-decoration: none;
+}
+
+
+/*-----------------------------------------------------*/
+/*------------------------- 2 ------------------------*/
+/*----------------------- right side -----------------------*/
+ /*---------------------------------------------------*/
+
+.project-element {
+  background-color: var(--color-0);
+  padding: var(--space-2);
+  position: relative;
+  border-bottom: 5px solid var(--color-2);
+  margin-bottom: var(--space-2);
+}
+
+.project-element .project-element-footer {
+  bottom:0;
+  right: 0;
+  position: absolute;
+  font-size: 12px;
+  transform: translate( calc(var(--space-2) / 2), 50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.project-element .project-element-footer a {
+  margin-left: var(--space-1);
+}
+
+.project-element .project-element-footer .fa-stack i.fa-circle {
+  color: var(--color-2);
+}
+
+.social-media {
+   background-color: var(--color-0);
+   display: flex;
+}
+
+.social-media a {
+  flex-grow: 1;
+  text-align: center;
+  padding: var(--space-1);
+  position: relative;
+  color: var(--color-2);
+}
+
+.social-media a:hover {
+  color: var(--color-3);
+}
+
+.social-media a:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-3);
+  height: 2px;
+}
+
+.element-tutorial {
+  background-color: var(--color-0);
+  padding: var(--space-2);
+  margin-top: var(--space-2);
+  position: relative;
+}
+
+.element-tutorial p {
+  padding-bottom: var(--space-2);
+}
+
+.element-tutorial tr.false {
+  display: none;
+}
+.element-tutorial tr.active {
+  background-color: rgba(0,0,0,0.05);
+  transition: var(--transition-long);
+}
+
+.triungle {
+  position: relative;
+}
+.triungle::before {
+  border-top: var(--space-2) solid var(--color-1);
+  border-left: var(--space-2) solid transparent;
+
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+/*-----------------------------------------------------*/
+/*------------------------- 2 ------------------------*/
+/*----------------------- left side -----------------------*/
+ /*---------------------------------------------------*/
+
+.navbar-brand {
+  color: var(--color-4);
+  opacity: var(--opacity);
+}
+
+.navbar-brand:hover {
+  opacity: 1;
+  color: var(--color-4);
+}
+
+#box-of-me-name {
+  padding: calc(100% - var(--space-4)) var(--space-2) var(--space-2) var(--space-2);
+  background-size:cover;
+  background-image: url('../asset/img/radu_dragan_fotografie.jpg');
+  background-position: center;
+}
+
+#box-of-me-name h1{
+  font-size: 30px;
+  margin: 0
+}
+
+#box-of-me-name h2{
+  font-size: 13px;
+}
+
+#box-of-me-data {
+  padding: var(--space-2);
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+
+#box-of-me-data .fa-stack {
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, calc(-1 * calc(var(--space-1) / 2)));
+}
+
+#box-of-me-data .fa-stack .fa-stack-1x {
+    transform: scale(0.8);
+}
+
+#box-of-me-data .fa-stack .fa-stack-2x {
+  color: var(--color-3);
+}
+
+#box-of-me-data p{
+  border-bottom: 1px solid white;
+  padding: var(--space-1) 0;
+  margin-bottom: 0
+}
+
+#box-of-me-data p:first-of-type {
+  padding-top: 0;
+}
+
+#box-of-me-data p:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0px solid transparent;
+}
+
+/*-----------------------------------------------------
+------------------------- 4 ---------------------------
+----------------------- Media Q -----------------------
+-----------------------------------------------------*/
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-left:  var(--space-1);
+    padding-right: var(--space-1);
+  }
+
+  .table td, .table th {
+    font-size: 10px;
+  }
+
+  .element-tutorial {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .element-tutorial h2, .element-tutorial p {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  #box-of-me-name {
+    padding-top: var(--space-5);
+  }
+  #box-of-logo {
+    text-align: center;
+    margin-bottom: var(--space-2);
+  }
+  #box-of-logo a {
+    font-size: 5vw;
+    opacity: 1;
+    color: var(--color-0);
+    font-weight: 100;
+  }
+}
