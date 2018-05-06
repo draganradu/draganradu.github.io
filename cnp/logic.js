@@ -277,7 +277,6 @@ $( document ).ready(function() {
          obiect = new model_cnp($("#cnp-input-data").val().toString());
          $('#cnp-output-table').html(_table_view(obiect));
          $('#cnp-output-table').blur();
-         console.log(obiect);
      }
 
     // $('#cnp-output-table').text(data._table_build);

@@ -111,8 +111,6 @@ function tutorial_build(object){
   var temp = "";
   temp += wrap("h2","Tutorial");
   temp += wrap("p","This is a list of tutorials i have read or watched recently and i feel are useful or just fun.");
-
-  console.log(object);
   object.sort(sort_by('name', false, function(a){return a.toUpperCase()}));
 
   temp += table_build(object);
@@ -145,4 +143,10 @@ for(i = temp.row.length - 1; i>=0; --i){
   temp.d_temp ++;
 }
   return `<a href="tel:${temp.row}">${temp.out}</a>`;
+}
+
+function build_file(name){
+
+
+  return `<div class="element-file"><a href="${name}"><i class="fa fa-file-word-o" aria-hidden="true"></i><br><span>cv 2018</span></a></div>`;
 }

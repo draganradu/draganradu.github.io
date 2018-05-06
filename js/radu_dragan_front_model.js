@@ -13,6 +13,7 @@ var data = {
   footprint: {
     tel: "0771050157",
     email: "radu.dragan@fotodex.ro",
+    cv: "radu_dragan_cv_2018.pdf",
     git: "https://github.com/draganradu/draganradu.github.io/tree/master/",
 
     social_media : [{

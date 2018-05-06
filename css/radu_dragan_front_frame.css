@@ -212,6 +212,33 @@ body {
   border-bottom: 0px solid transparent;
 }
 
+.element-file {
+  position: absolute;
+  right: calc(var(--space-1) / 2);
+  bottom: calc(var(--space-1) / 2);
+}
+
+.element-file span {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  background-color: var(--color-2);
+  white-space: nowrap;
+  transform: translate(0, -100%);
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
+
+  height: 0;
+  overflow: hidden;
+
+  transition: 1s;
+
+  text-transform: uppercase;
+}
+.element-file:hover span {
+
+  height: 100%;
+}
 /*-----------------------------------------------------
 ------------------------- 4 ---------------------------
 ----------------------- Media Q -----------------------
