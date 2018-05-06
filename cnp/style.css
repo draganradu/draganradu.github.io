@@ -1,0 +1,20 @@
+body {
+  padding:20px; 
+}
+#cnp-row {
+  min-height: 100vh;
+  display: flex;
+}
+
+#cnp-row > .col-sm {
+  margin: auto;
+}
+
+#cnp-input-group {
+  margin-bottom: 40px;
+}
+
+tbody tr:first-of-type td,
+tbody tr:first-of-type th {
+  border-top: 0px solid transparent;
+}

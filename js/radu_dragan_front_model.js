@@ -13,6 +13,7 @@ var data = {
   footprint: {
     tel: "0771050157",
     email: "radu.dragan@fotodex.ro",
+    git: "https://github.com/draganradu/draganradu.github.io/tree/master/",
 
     social_media : [{
         name: "facebook",
@@ -61,19 +62,24 @@ var data = {
 };
 
 
-
 var projects = [
+  {
+    name: "CNP - Validator",
+    description: "CNP validator (Romanian Unique National Identification Number) it's a simple program that is extracting the public information from the number (age, birth location, sex etc.) and is comparing the control digit to see if the number is't validity and if the birth date is an existing one.",
+    link_play: "cnp",
+    link_git: `${data.footprint.git}/cnp/`
+  },
   {
     name: "Color of the day",
     description: "The project came to be as a small joke on how easy it is to correlate any set of numbers and how we give meaning to a set of seemingly random data points. So i went and made the most useless data point representation. A hex (color) output of the computed day.",
     link_play: "color-of-the-day/",
-    link_git: "https://github.com/draganradu/draganradu.github.io/tree/master/color-of-the-day"
+    link_git: `${data.footprint.git}/color-of-the-day/`
   },
   {
     name: "The Box of Photographic knowledge",
     description: "This is the result of crowler trying to approximate what is a definition from online glossaries, it`s a bit hard to load in one place the amount of data collected. It is one of the first step in my new fotodex 7 project.",
     link_play: "the-box-of-photographic-knowledge-radu-dragan",
-    link_git: "https://github.com/draganradu/draganradu.github.io/tree/master/the-box-of-photographic-knowledge-radu-dragan"
+    link_git: `${data.footprint.git}/the-box-of-photographic-knowledge-radu-dragan/`
   }
 ];
 
